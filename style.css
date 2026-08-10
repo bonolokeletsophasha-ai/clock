@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-image: url("Images/clock-bg.jpg");
+    background-image: url("Images/clock-bg2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +83,10 @@ button:hover {
 /* DARK MODE */
 
 body.dark-mode {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background-image: url("Images/clock-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body.dark-mode .clock-container {
