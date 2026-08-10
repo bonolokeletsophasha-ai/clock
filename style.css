@@ -1,0 +1,115 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    transition: 0.3s;
+}
+
+/* Clock box */
+.clock-container {
+    width: 90%;
+    max-width: 650px;
+    padding: 50px 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: #1e3a8a;
+}
+
+/* Date */
+#date {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #64748b;
+}
+
+/* Clock */
+#clock {
+    margin-bottom: 35px;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #2563eb;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body.dark-mode .clock-container {
+    background: rgba(30, 41, 59, 0.9);
+}
+
+body.dark-mode h1 {
+    color: #93c5fd;
+}
+
+body.dark-mode #date {
+    color: #cbd5e1;
+}
+
+body.dark-mode #clock {
+    color: #60a5fa;
+}
+
+/* Mobile devices */
+
+@media (max-width: 600px) {
+
+    .clock-container {padding: 40px 20px; }
+
+    h1 { font-size: 30px; }
+
+    #date {font-size: 15px;}
+
+    #clock {font-size: 40px; letter-spacing: 2px; }
+
+    button {  width: 100%; }
+}
